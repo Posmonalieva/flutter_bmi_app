@@ -145,57 +145,134 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const SizedBox(height: 22),
-              Container(
-                height: 160,
-                decoration: BoxDecoration(
-                  color: activeColor,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  children: [
-                    const Text('data'),
-                    const Text('data'),
-                    Row(
-                      children: [
-                        ElevatedButton(
-                          onPressed: () {},
-                          // ignore: sort_child_properties_last
-                          child: const Padding(
-                            padding: EdgeInsets.all(3),
-                            child: Text(
-                              '+',
-                              style: TextStyle(
-                                fontSize: 36,
-                                fontWeight: FontWeight.bold,
-                              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                        color: activeColor,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      child: Column(
+                        children: [
+                          Text('weight'.toUpperCase()),
+                          const Text(
+                            '60',
+                            style: TextStyle(
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: inActiveColor,
-                            shape: const CircleBorder(),
-                          ),
-                        ),
-                        ElevatedButton(
-                          onPressed: () {},
-                          // ignore: sort_child_properties_last
-                          child: const Padding(
-                            padding: EdgeInsets.all(3),
-                            child: Text(
-                              '-',
-                              style: TextStyle(
-                                fontSize: 36,
-                                fontWeight: FontWeight.bold,
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              ElevatedButton(
+                                onPressed: () {},
+                                // ignore: sort_child_properties_last
+                                child: const Padding(
+                                  padding: EdgeInsets.all(3),
+                                  child: Text(
+                                    '+',
+                                    style: TextStyle(
+                                      fontSize: 36,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: inActiveColor,
+                                  shape: const CircleBorder(),
+                                ),
                               ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                // ignore: sort_child_properties_last
+                                child: const Padding(
+                                  padding: EdgeInsets.all(3),
+                                  child: Text(
+                                    '-',
+                                    style: TextStyle(
+                                      fontSize: 36,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                  shape: const CircleBorder(),
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 22),
+                  Expanded(
+                    child: Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                        color: activeColor,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      child: Column(
+                        children: [
+                          Text('age'.toUpperCase()),
+                          const Text(
+                            '60',
+                            style: TextStyle(
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                          style: ElevatedButton.styleFrom(
-                            shape: const CircleBorder(),
-                          ),
-                        ),
-                      ],
-                    )
-                  ],
-                ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              ElevatedButton(
+                                onPressed: () {},
+                                // ignore: sort_child_properties_last
+                                child: const Padding(
+                                  padding: EdgeInsets.all(3),
+                                  child: Text(
+                                    '+',
+                                    style: TextStyle(
+                                      fontSize: 36,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: inActiveColor,
+                                  shape: const CircleBorder(),
+                                ),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                // ignore: sort_child_properties_last
+                                child: const Padding(
+                                  padding: EdgeInsets.all(3),
+                                  child: Text(
+                                    '-',
+                                    style: TextStyle(
+                                      fontSize: 36,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                  shape: const CircleBorder(),
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(height: 22),
             ],
