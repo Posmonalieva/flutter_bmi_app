@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ResultPage extends StatelessWidget {
+class ResultScreen extends StatelessWidget {
   final String result;
   final String description;
   final double data;
 
-  const ResultPage({
+  const ResultScreen({
     required this.data,
     required this.description,
     required this.result,
@@ -47,10 +47,6 @@ class ResultPage extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute
-                //   (builder: context) => const ResultPage(),
-                // ),
               },
               child: Text(
                 'Re-Calculate'.toUpperCase(),
