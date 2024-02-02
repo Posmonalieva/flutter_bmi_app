@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bmi_app/screens/home_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -36,9 +37,7 @@ class MyApp extends StatelessWidget {
           displaySmall: GoogleFonts.poppins(),
         ),
       ),
-      home: const HomeScreen(
-        title: 'BMI Calculator',
-      ),
+      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
